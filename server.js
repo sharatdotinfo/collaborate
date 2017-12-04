@@ -10,9 +10,10 @@ var path = require('path');
 
 // Using the filesystem module
 var fs = require('fs');
+var port = (process.env.PORT || 8080);
 
 var server = http.createServer(handleRequest);
-server.listen(8080);
+server.listen(port);
 
 console.log('Server started on port 8080');
 
