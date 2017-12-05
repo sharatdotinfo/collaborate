@@ -27,7 +27,7 @@ function draw() {
   // Nothing
 }
 
-function touchMoved() {
+function func() {
   // Draw some white circles
   fill(255);
   noStroke();
@@ -36,13 +36,20 @@ function touchMoved() {
   sendmouse(mouseX,mouseY);
 }
 
+function touchMoved() {
+  func();
+}
+
+function touchStarted() {
+  func();
+}
+
+function touchEnded() {
+  func();
+}
+
 function mouseDragged() {
-  // Draw some white circles
-  fill(255);
-  noStroke();
-  ellipse(mouseX,mouseY,20,20);
-  // Send the mouse coordinates
-  sendmouse(mouseX,mouseY);
+  func();
 }
 
 // Function for sending to the socket
