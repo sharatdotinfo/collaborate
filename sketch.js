@@ -27,7 +27,7 @@ function draw() {
   // Nothing
 }
 
-function touchStarted() {
+function touchMoved() {
   // Draw some white circles
   fill(255);
   noStroke();
