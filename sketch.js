@@ -38,14 +38,7 @@ function func() {
 
 function touchMoved() {
   func();
-}
-
-function touchStarted() {
-  func();
-}
-
-function touchEnded() {
-  func();
+  return false;
 }
 
 function mouseDragged() {
