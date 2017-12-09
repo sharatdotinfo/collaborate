@@ -1,17 +1,15 @@
 // Keep track of our socket connection
 var socket;
 var img;
+var pg;
 
 function preload() {
   img = loadImage("darth.png");
 }
 
 function setup() {
-  createCanvas(windowWidth/2, windowHeight/2);
-  img = loadImage("darth.png");
-  //image(img, 0, 0);
-
-  //img.style("opacity", 0.2);
+  createCanvas(300, 600);
+  pg = createGraphics(300, 300);
 
   background(0);
   // Start a socket connection to the server
@@ -31,16 +29,16 @@ function setup() {
   );
 }
 
+function mousePressed(){
+  pg.fill(255, 0, 0);
+  pg.ellipse(mouseX, mouseY, 20, 20);
+}
+
 function draw() {
-  // Displays the image at its actual size at point (0,0)
-    image(img, 0, 0);
-    // Displays the image at point (0, height/2) at half size
-    //image(img, 0, height/2, img.width/2, img.height/2);
-    var dx = (mouseX-img.width/2) - offset;
-    offset += dx * easing;
-    tint(255, 127);  // Display at half opacity
-    image(img, offset, 0);
-  }
+  image(img, 0, 0, 300, 300);
+  image(pg, 0, 0);
+  image(pg, 0, 300);
+}
 
 function func() {
   // Draw some white circles
