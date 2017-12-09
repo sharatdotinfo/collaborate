@@ -48,9 +48,13 @@ function mousePressed(){
 }
 
 function draw() {
-  image(img, 0, 0, 300, 300);
-  image(pg, 0, 0);
-  image(pg, 0, 300);
+  // Displays the image at its actual size at point (0,0)
+  image(img, 0, 0);
+  // Displays the image at point (0, height/2) at half size
+  image(img, 0, height/2, img.width/2, img.height/2);
+  //image(img, 0, 0, 300, 300);
+  //image(pg, 0, 0);
+  //image(pg, 0, 300);
 }
 
 function func() {
