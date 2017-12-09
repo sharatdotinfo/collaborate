@@ -5,6 +5,7 @@ var img;
 function setup() {
   createCanvas(windowWidth/2, windowHeight/2);
   img = loadImage("darth.png");
+  img.opacity = 0.2;
 
   background(0);
   // Start a socket connection to the server
