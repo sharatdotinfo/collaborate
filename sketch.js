@@ -5,7 +5,7 @@ var img;
 function setup() {
   createCanvas(windowWidth/2, windowHeight/2);
   img = loadImage("darth.png");
-  img.opacity = 0.2;
+  //img.opacity = 0.2;
 
   background(0);
   // Start a socket connection to the server
@@ -29,7 +29,7 @@ function draw() {
   // Displays the image at its actual size at point (0,0)
     image(img, 0, 0);
     // Displays the image at point (0, height/2) at half size
-    image(img, 0, height/2, img.width/2, img.height/2);
+    //image(img, 0, height/2, img.width/2, img.height/2);
   }
 
 function func() {
