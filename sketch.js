@@ -34,10 +34,11 @@ function setup() {
     function(data) {
       console.log("Got1: " + data.x + " " + data.y);
 
-      pg = createGraphics(300, 300);
-
-      pg.fill(255, 0, 0);
-      pg.ellipse(mouseX, mouseY, 20, 20);
+      fill(0,0,255);
+      noStroke();
+      ellipse(data.x,data.y,20,20);
+      //pg.fill(255, 0, 0);
+      //pg.ellipse(mouseX, mouseY, 20, 20);
     }
   );
 }
