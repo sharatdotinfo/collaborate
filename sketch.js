@@ -34,11 +34,8 @@ function setup() {
     function(data) {
       console.log("Got1: " + data.x + " " + data.y);
 
-      fill(0,0,255);
-      noStroke();
-      ellipse(data.x,data.y,20,20);
-      //pg.fill(255, 0, 0);
-      //pg.ellipse(mouseX, mouseY, 20, 20);
+      pg.fill(255, 0, 0);
+      pg.ellipse(mouseX, mouseY, 20, 20);
     }
   );
 }
@@ -53,7 +50,7 @@ function mousePressed(){
 function draw() {
   image(img, 0, 0, 300, 300);
   image(pg, 0, 0);
-  //image(pg, 0, 300);
+  image(pg, 0, 300);
 }
 
 function func() {
