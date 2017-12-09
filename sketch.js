@@ -44,11 +44,8 @@ function setup() {
 }
 
 function mousePressed(){
-  //pg.fill(255, 0, 0);
-  //pg.ellipse(mouseX, mouseY, 20, 20);
-  fill(255);
-  noStroke();
-  ellipse(mouseX,mouseY,20,20);
+  pg.fill(255, 0, 0);
+  pg.ellipse(mouseX, mouseY, 20, 20);
   sendmouse1(mouseX,mouseY);
 
 }
@@ -56,7 +53,7 @@ function mousePressed(){
 function draw() {
   image(img, 0, 0, 300, 300);
   image(pg, 0, 0);
-  image(pg, 0, 300);
+  //image(pg, 0, 300);
 }
 
 function func() {
