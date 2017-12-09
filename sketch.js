@@ -44,8 +44,11 @@ function setup() {
 }
 
 function mousePressed(){
-  pg.fill(255, 0, 0);
-  pg.ellipse(mouseX, mouseY, 20, 20);
+  //pg.fill(255, 0, 0);
+  //pg.ellipse(mouseX, mouseY, 20, 20);
+  fill(255);
+  noStroke();
+  ellipse(mouseX,mouseY,20,20);
   sendmouse1(mouseX,mouseY);
 
 }
