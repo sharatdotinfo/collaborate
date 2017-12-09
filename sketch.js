@@ -34,6 +34,8 @@ function setup() {
     function(data) {
       console.log("Got1: " + data.x + " " + data.y);
 
+      pg = createGraphics(300, 300);
+
       pg.fill(255, 0, 0);
       pg.ellipse(mouseX, mouseY, 20, 20);
     }
@@ -62,6 +64,7 @@ function func() {
   sendmouse(mouseX,mouseY);
 }
 
+/*
 function touchMoved() {
   // Draw some white circles
   fill(255);
@@ -72,6 +75,7 @@ function touchMoved() {
 
   return false;
 }
+*/
 
 function mouseDragged() {
   func();
