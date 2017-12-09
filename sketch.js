@@ -32,6 +32,8 @@ function setup() {
 function mousePressed(){
   pg.fill(255, 0, 0);
   pg.ellipse(mouseX, mouseY, 20, 20);
+  sendmouse(mouseX,mouseY);
+
 }
 
 function draw() {
