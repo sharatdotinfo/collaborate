@@ -11,7 +11,7 @@ function setup() {
   //img = loadImage("darth.png");
   //image(img, 0, 0);
 
-  img.style("opacity", 0.2);
+  //img.style("opacity", 0.2);
 
   background(0);
   // Start a socket connection to the server
