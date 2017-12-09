@@ -2,9 +2,15 @@
 var socket;
 var img;
 
-function setup() {
-  createCanvas(windowWidth/2, windowHeight/2);
+function preload() {
   img = loadImage("darth.png");
+}
+
+function setup() {
+  //createCanvas(windowWidth/2, windowHeight/2);
+  //img = loadImage("darth.png");
+  image(img, 0, 0);
+
   img.opacity = 0.2;
 
   background(0);
