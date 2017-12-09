@@ -26,6 +26,14 @@ function setup() {
       noStroke();
       ellipse(data.x,data.y,20,20);
 
+    }
+  );
+
+  socket.on('mouse1',
+    // When we receive data
+    function(data) {
+      console.log("Got: " + data.x + " " + data.y);
+
       pg.fill(255, 0, 0);
       pg.ellipse(mouseX, mouseY, 20, 20);
     }
@@ -68,6 +76,22 @@ function touchMoved() {
 function mouseDragged() {
   func();
 }
+
+// Function for sending to the socket
+function sendmouse1(xpos, ypos) {
+  // We are sending!
+  console.log("sendmouse: " + xpos + " " + ypos);
+
+  // Make a little object with  and y
+  var data = {
+    x: xpos,
+    y: ypos
+  };
+
+  // Send that object to the socket
+  socket.emit('mouse1',data);
+}
+
 
 // Function for sending to the socket
 function sendmouse(xpos, ypos) {
