@@ -80,7 +80,7 @@ function mouseDragged() {
 // Function for sending to the socket
 function sendmouse1(xpos, ypos) {
   // We are sending!
-  console.log("sendmouse: " + xpos + " " + ypos);
+  console.log("sendmouse1: " + xpos + " " + ypos);
 
   // Make a little object with  and y
   var data = {
