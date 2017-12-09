@@ -9,7 +9,7 @@ function preload() {
 
 function setup() {
   createCanvas(300, 600);
-  pg = createGraphics(300, 300);
+  //pg = createGraphics(300, 300);
 
   background(0);
   // Start a socket connection to the server
@@ -41,9 +41,9 @@ function setup() {
 }
 
 function mousePressed(){
-  pg.fill(255, 0, 0);
-  pg.ellipse(mouseX, mouseY, 20, 20);
-  sendmouse1(mouseX,mouseY);
+  //pg.fill(255, 0, 0);
+  //pg.ellipse(mouseX, mouseY, 20, 20);
+  //sendmouse1(mouseX,mouseY);
 
 }
 
