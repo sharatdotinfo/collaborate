@@ -32,7 +32,7 @@ function setup() {
   socket.on('mouse1',
     // When we receive data
     function(data) {
-      console.log("Got: " + data.x + " " + data.y);
+      console.log("Got1: " + data.x + " " + data.y);
 
       pg.fill(255, 0, 0);
       pg.ellipse(mouseX, mouseY, 20, 20);
