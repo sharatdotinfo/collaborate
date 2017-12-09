@@ -1,10 +1,11 @@
-
-
 // Keep track of our socket connection
 var socket;
+var img;
 
 function setup() {
   createCanvas(windowWidth/2, windowHeight/2);
+  img = loadImage("darth.png");
+
   background(0);
   // Start a socket connection to the server
   // Some day we would run this server somewhere else
@@ -24,8 +25,11 @@ function setup() {
 }
 
 function draw() {
-  // Nothing
-}
+  // Displays the image at its actual size at point (0,0)
+    image(img, 0, 0);
+    // Displays the image at point (0, height/2) at half size
+    image(img, 0, height/2, img.width/2, img.height/2);
+  }
 
 function func() {
   // Draw some white circles
