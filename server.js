@@ -86,10 +86,10 @@ io.sockets.on('connection',
     socket.on('mouse1',
       function(data) {
         // Data comes in as whatever was sent, including objects
-        console.log("Received: 'mouse' " + data.x + " " + data.y);
+        console.log("Received: 'mouse1' " + data.x + " " + data.y);
 
         // Send it to all other clients
-        socket.broadcast.emit('mouse', data);
+        socket.broadcast.emit('mouse1', data);
 
         // This is a way to send to everyone including sender
         // io.sockets.emit('message', "this goes to everyone");
