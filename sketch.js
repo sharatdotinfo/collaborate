@@ -40,7 +40,7 @@ function setup() {
       //noStroke();
       //ellipse(data.x,data.y,20,20);
 
-      pg.fill(255, 0, 0);
+      pg.fill(0, 0, 255);
       pg.ellipse(data.x, data.y, 20, 20);
     }
   );
