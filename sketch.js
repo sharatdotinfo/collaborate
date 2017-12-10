@@ -40,6 +40,8 @@ function setup() {
       //noStroke();
       //ellipse(data.x,data.y,20,20);
 
+      pg = createGraphics(300, 300);
+
       pg.fill(255, 0, 0);
       pg.ellipse(mouseX, mouseY, 20, 20);
     }
