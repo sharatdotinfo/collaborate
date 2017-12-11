@@ -8,8 +8,9 @@ function preload() {
  }
 
 function setup() {
-  createCanvas(windowWidth/2, windowHeight/2);
-  pg = createGraphics(300, 300);
+  //createCanvas(windowWidth/2, windowHeight/2);
+  createCanvas(578, 400);
+  pg = createGraphics(578, 400);
 
   //img = loadImage("darth.png");
   //img.opacity = 0.2;
