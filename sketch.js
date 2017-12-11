@@ -71,6 +71,18 @@ function func() {
   sendmouse(mouseX,mouseY);
 }
 
+function touchStarted() {
+  // Draw some white circles
+  fill(255);
+  noStroke();
+  ellipse(mouseX,mouseY,20,20);
+  // Send the mouse coordinates
+  sendmouse1(mouseX,mouseY);
+
+  return false;
+}
+
+
 function touchMoved() {
   // Draw some white circles
   fill(255);
