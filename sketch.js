@@ -9,7 +9,7 @@ function preload() {
 
 function setup() {
   //createCanvas(windowWidth/2, windowHeight/2);
-  createCanvas(578, 400);
+  createCanvas(windowWidth, windowHeight);
   pg = createGraphics(578, 400);
 
   //img = loadImage("darth.png");
