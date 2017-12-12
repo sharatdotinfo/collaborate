@@ -8,9 +8,8 @@ function preload() {
  }
 
 function setup() {
-  //createCanvas(windowWidth/2, windowHeight/2);
   createCanvas(windowWidth, windowHeight/2);
-  pg = createGraphics(578, 400);
+  pg = createGraphics(windowWidth, windowHeight/2);
 
   //img = loadImage("darth.png");
   //img.opacity = 0.2;
@@ -48,19 +47,19 @@ function setup() {
 }
 
 function mousePressed(){
-      pg.fill(255, 0, 0);
-      pg.ellipse(mouseX, mouseY, 20, 20);
+  pg.fill(255, 0, 0);
+  pg.ellipse(mouseX, mouseY, 20, 20);
 
-      sendmouse1(mouseX,mouseY);
+  sendmouse1(mouseX,mouseY);
 
-    }
+}
 
 function draw() {
   // Displays the image at its actual size at point (0,0)
   image(img, 0, 0, 400, 400);
-    image(pg, 0, 0);
-    image(pg, 0, 400);
-  }
+  image(pg, 0, 0);
+  image(pg, 0, 400);
+}
 
 function func() {
   // Draw some white circles
@@ -88,10 +87,7 @@ function touchMoved() {
   noStroke();
   ellipse(mouseX,mouseY,20,20);
   // Send the mouse coordinates
-  //Remove This
-  pg.fill(255, 0, 0);
-  pg.ellipse(mouseX, mouseY, 20, 20);
-  //Remove above
+
   sendmouse(mouseX,mouseY);
 
   return false;
