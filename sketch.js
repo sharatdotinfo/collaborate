@@ -88,6 +88,10 @@ function touchMoved() {
   noStroke();
   ellipse(mouseX,mouseY,20,20);
   // Send the mouse coordinates
+  //Remove This
+  pg.fill(255, 0, 0);
+  pg.ellipse(mouseX, mouseY, 20, 20);
+  //Remove above
   sendmouse(mouseX,mouseY);
 
   return false;
