@@ -73,9 +73,8 @@ function func() {
 
 function touchStarted() {
   // Draw some white circles
-  fill(255);
-  noStroke();
-  ellipse(mouseX,mouseY,20,20);
+  pg.fill(255, 0, 0);
+  pg.ellipse(mouseX, mouseY, 20, 20);
   // Send the mouse coordinates
   sendmouse1(mouseX,mouseY);
 
